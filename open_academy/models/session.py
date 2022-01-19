@@ -3,6 +3,7 @@ from odoo import fields, models, api
 
 class Session(models.Model):
     _name = 'academy.session'
+    _description = 'A lecture session for a course'
 
     name = fields.Char(string='Name')
     start_date = fields.Date(string='Start Date', default=fields.Date.today())

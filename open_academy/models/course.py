@@ -5,6 +5,7 @@ from odoo import fields, models
 
 class Course(models.Model):
     _name = 'academy.course'
+    _description = 'A course related to a specific topic'
 
     title = fields.Char(string="Title", required=True)
 
