@@ -26,7 +26,7 @@ class EstateProperty(models.Model):
     @api.constrains('selling_price', 'expected_price')
     def _check_selling_price(self):
         # Selling price should be at least 90% of the expected price.
-        if self.expected_price and self.selling_price < (self.expected_price * 90 // 100):
+        if self.expected_price and self.selling_price < (self.expected_price * 90 / 100):
             raise ValidationError(_('The selling price must be at least 90% of the expected price!'
                                     'You must reduce the expected price or increase the selling price'
                                     'if you want to accept the offer.'))
@@ -98,7 +98,7 @@ class EstateProperty(models.Model):
             self.garden_orientation = 'north'
 
     # TODO: set selling price to zero when there are no offers!
-    # This methods works but doesn't save the selling_price value after saving the form view.
+    # This methods works but doesn't store the selling_price value after saving the form view.
     @api.onchange('best_price')
     def _onchange_best_price(self):
         if self.best_price == 0:
