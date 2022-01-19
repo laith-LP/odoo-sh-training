@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="cs_course" model="academy.course">
+        <field name="title">Computer Science</field>
+        <field name="description">CS Description</field>
+    </record>
+</odoo>

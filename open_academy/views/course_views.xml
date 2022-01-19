@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="courses_menu_action" model="ir.actions.act_window">
+        <field name="name">Open Academy</field>
+        <field name="res_model">academy.course</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="courses_main_menu" action="courses_menu_action"/>
+
+    <record id="courses_form_view" model="ir.ui.view">
+        <field name="name">courses.form.view</field>
+        <field name="model">academy.course</field>
+        <field name="arch" type="xml">
+            <form string="Course Form">
+                <header>
+                    <button string="Print Title" type="object" name="print_course_title"
+                            state="default" class="oe_highlight"/>
+                    <button string="Print Description" type="object" name="print_course_description"
+                            state="state1" class="oe_highlight"/>
+                    <field name="states" widget="statusbar"/>
+                </header>
+                <sheet>
+                    <div class="oe_title">
+                        <label for="title" string="Label Title" class="oe_edit_only"/>
+                        <h1>
+                            <field name="title"/>
+                        </h1>
+                    </div>
+                    <group>
+                        <field name="title"/>
+                        <field name="responsible"/>
+                    </group>
+                    <notebook>
+                        <page string="Description">
+                            <field name="description"/>
+                        </page>
+                    </notebook>
+                </sheet>
+                <footer>
+                    <field name="description"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="courses_search_view" model="ir.ui.view">
+        <field name="name">courses.search.view</field>
+        <field name="model">academy.course</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="title" string="Course Title"/>
+                <field name="description"/>
+            </search>
+        </field>
+    </record>
+
+    <!-- List(tree) View of Academy Courses -->
+    <record id="courses_list_view" model="ir.ui.view">
+        <field name="name">courses.list.view</field>
+        <field name="model">academy.course</field>
+        <field name="arch" type="xml">
+            <tree string="Courses List">
+                <field name="title"/>
+                <field name="description"/>
+            </tree>
+        </field>
+    </record>
+</odoo>

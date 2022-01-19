@@ -1,0 +1,9 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+acl_estate_property_default,acl_estate_property_default,model_estate_property,base.group_user,1,0,0,0
+acl_estate_property_admin,acl_estate_property_admin,model_estate_property,group_admins,1,1,1,1
+acl_estate_property_type_default,acl_estate_property_type_default,model_estate_property_type,base.group_user,1,0,0,0
+acl_estate_property_type_admin,acl_estate_property_type_admin,model_estate_property_type,group_admins,1,1,1,1
+acl_estate_property_tag_default,acl_estate_property_tag_default,model_estate_property_tag,base.group_user,1,0,0,0
+acl_estate_property_tag_admin,acl_estate_property_tag_admin,model_estate_property_tag,group_admins,1,1,1,1
+acl_estate_property_offer_default,acl_estate_property_offer_default,model_estate_property_offer,base.group_user,1,0,0,0
+acl_estate_property_offer_admin,acl_estate_property_offer_admin,model_estate_property_offer,group_admins,1,1,1,1
