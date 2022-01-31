@@ -1,0 +1,78 @@
+ref_id,name,price,state,"date_release",author_ids,publisher_id,last_update_date
+B1,Book 1,40,lost,2022-01-26,"Author 1,Author 4",Publisher 2,2022-01-25 17:05:08
+B2,Book 2,98,coming_soon,2022-02-23,"Author 2,Author 4",Publisher 2,2022-01-25 17:05:08
+B3,Book 3,55,lost,2022-01-13,"Author 1",Publisher 3,2022-01-25 17:05:08
+B4,Book 4,30,available,2022-01-21,Author 2,Publisher 4,2022-01-25 17:05:08
+B5,Book 5,45,available,2022-02-21,Author 3,Publisher 1,2022-01-25 17:05:08
+B6,Book 6,88,coming_soon,2022-03-26,Author 2,Publisher 4,2022-01-25 17:05:08
+B7,Book 7,76,available,2022-02-03,Author 3,Publisher 3,2022-01-25 17:05:08
+B8,Book 8,83,coming_soon,2022-01-21,"Author 1,Author 2,Author 4",Publisher 4,2022-01-25 17:05:08
+B9,Book 9,34,available,2022-01-21,Author 1,Publisher 1,2022-01-25 17:05:08
+B10,Book 10,100,lost,2022-02-20,"Author 2,Author 4",Publisher 2,2022-01-25 17:05:08
+B11,Book 11,60,available,2022-01-03,Author 3,Publisher 3,2022-01-25 17:05:08
+B12,Book 12,100,lost,2022-03-21,Author 2,Publisher 4,2022-01-25 17:05:08
+B13,Book 13,55,coming_soon,2022-02-21,Author 1,Publisher 1,2022-01-25 17:05:08
+B14,Book 14,12,coming_soon,2022-01-12,Author 2,Publisher 2,2022-01-25 17:05:08
+B15,Book 15,98,available,2022-04-03,Author 3,Publisher 3,2022-01-25 17:05:08
+B16,Book 16,27,available,2022-03-21,Author 2,Publisher 4,2022-01-25 17:05:08
+B17,Book 17,66,available,2022-09-21,"Author 4,Author 3",Publisher 1,2022-01-25 17:05:08
+B18,Book 18,82,available,2022-02-24,Author 2,Publisher 2,2022-01-25 17:05:08
+B19,Book 19,9,available,2022-02-03,"Author 1,Author 3",Publisher 3,2022-01-25 17:05:08
+B20,Book 20,5,available,2022-01-21,Author 2,Publisher 4,2022-01-25 17:05:08
+B21,Book 21,5,available,2022-03-21,Author 1,Publisher 1,2022-01-25 17:05:08
+B22,Book 22,72,coming_soon,2022-04-03,Author 3,Publisher 3,2022-01-25 17:05:08
+B23,Book 23,38,lost,2022-01-21,Author 2,Publisher 4,2022-01-25 17:05:08
+B24,Book 24,89,available,2022-01-21,"Author 1,Author 2",Publisher 1,2022-01-25 17:05:08
+B25,Book 25,49,available,2022-01-23,Author 2,Publisher 2,2022-01-25 17:05:08
+B26,Book 26,38,available,2022-03-03,"Author 3,Author 4",Publisher 3,2022-01-25 17:05:08
+B27,Book 27,28,coming_soon,2022-03-21,"Author 2,Author 3",Publisher 4,2022-01-25 17:05:08
+B28,Book 28,39,available,2022-02-03,Author 3,Publisher 3,2022-01-25 17:05:08
+B29,Book 29,10,available,2022-01-21,"Author 2,Author 4",Publisher 4,2022-01-25 17:05:08
+B30,Book 30,20,available,2022-03-21,"Author 1,Author 3",Publisher 1,2022-01-25 17:05:08
+B31,Book 31,28,available,2022-02-23,Author 2,Publisher 2,2022-01-25 17:05:08
+B32,Book 32,50,lost,2022-01-03,Author 3,Publisher 3,2022-01-25 17:05:08
+B33,Book 33,45,available,2022-03-21,Author 2,Publisher 4,2022-01-25 17:05:08
+B34,Book 34,30,coming_soon,2022-01-21,"Author 1,Author 2",Publisher 1,2022-01-25 17:05:08
+B35,Book 35,25,lost,2022-01-29,"Author 2,Author 4",Publisher 2,2022-01-25 17:05:08
+B36,Book 36,65,available,2022-02-03,"Author 1,Author 2,Author 3",Publisher 3,2022-01-25 17:05:08
+B37,Book 37,27,coming_soon,2022-01-21,Author 2,Publisher 4,2022-01-25 17:05:08
+B38,Book 38,18,available,2022-03-21,Author 1,Publisher 1,2022-01-25 17:05:08
+B39,Book 39,83,available,2022-01-28,Author 2,Publisher 2,2022-01-25 17:05:08
+B40,Book 40,53,lost,2022-07-28,"Author 2,Author 4",Unknown Publisher,2022-01-25 17:05:08
+B41,Book 41,73,available,2022-02-13,"Author 3,Author 4",Publisher 3,2022-01-25 17:05:08
+B42,Book 42,73,available,2022-02-13,"Author 3",Publisher 1,2022-01-25 17:05:08
+B43,Book 43,33,available,2022-02-13,"Author 2,Author 4",Publisher 3,2022-01-25 17:05:08
+B44,Book 44,73,available,2022-02-13,"Author 1,Author 3,Author 2",Publisher 2,2022-01-25 17:05:08
+B45,Book 45,93,coming_soon,2022-02-13,"Author 3",Publisher 1,2022-01-25 17:05:08
+B46,Book 46,23,available,2022-02-13,"Author 2",Publisher 3,2022-01-25 17:05:08
+B47,Book 47,73,available,2022-02-13,"Author 4,Author 1",Publisher 1,2022-01-25 17:05:08
+B48,Book 48,78,lost,2022-02-13,"Author 2,Author 2",Publisher 3,2022-01-25 17:05:08
+B49,Book 49,73,available,2022-02-13,"Author 1",Publisher 1,2022-01-25 17:05:08
+B50,Book 50,12,available,2022-02-13,"Author 2",Publisher 3,2022-01-25 17:05:08
+B51,Book 51,93,available,2022-01-21,Author 1,Publisher 4,2022-01-25 17:05:08
+B52,Book 52,29,available,2022-02-23,Author 2,Publisher 2,2022-01-25 17:05:08
+B53,Book 53,59,available,2022-02-23,"Author 3,Author 4",Publisher 2,2022-01-25 17:05:08
+B54,Book 54,19,lost,2022-02-03,Author 3,Publisher 3,2022-01-25 17:05:08
+B55,Book 55,18,available,2022-01-21,Author 2,Publisher 4,2022-01-25 17:05:08
+B56,Book 56,18,available,2022-01-21,"Author 1,Author 3",Publisher 1,2022-01-25 17:05:08
+B57,Book 57,27,available,2022-01-29,Author 2,Publisher 2,2022-01-25 17:05:08
+B58,Book 58,69,available,2022-03-03,Author 3,Publisher 3,2022-01-25 17:05:08
+B59,Book 59,18,available,2022-03-21,"Author 2,Author 4",Publisher 4,2022-01-25 17:05:08
+B60,Book 60,35,lost,2021-12-15,"Author 1,Author 3",Publisher 2,2022-01-25 17:05:08
+B61,Book 61,54,available,2021-12-29,Author 1,Publisher 1,2022-01-25 17:05:08
+B62,Book 62,50,available,2021-11-09,Author 3,Unknown Publisher,2022-01-25 17:05:08
+B63,Book 63,82,coming_soon,2021-11-15,"Author 1,Author 2",Publisher 2,2022-01-25 17:05:08
+B64,Book 64,23,available,2022-01-26,Author 3,Publisher 1,2022-01-25 17:05:08
+B65,Book 65,34,coming_soon,2015-01-11,Author 1,Publisher 1,2022-01-25 17:05:08
+B66,Book 66,10,coming_soon,2022-01-17,Author 3,Publisher 2,2022-01-25 17:05:08
+B67,Book 67,35,available,2022-01-20,Author 4,Publisher 4,2022-01-25 17:05:08
+B68,Book 68,80,coming_soon,2015-01-27,Author 1,Publisher 1,2022-01-25 17:05:08
+B69,Book 69,45,lost,2021-10-12,"Author 3,Author 4",Publisher 1,2022-01-25 17:05:08
+B80,Book 80,55,coming_soon,2021-04-20,"Author 2,Author 4",Publisher 3,2022-01-25 17:05:08
+B81,Book 81,44,available,2018-04-20,"Author 2,Author 4",Publisher 3,2022-01-25 17:05:08
+B82,Book 82,65,lost,2023-04-20,"Author 1,Author 2,Author 4",Publisher 1,2022-01-25 17:05:08
+B83,Book 83,12,available,2022-01-21,"Author 1,Author 4",Publisher 1,2022-01-25 17:05:08
+B84,Book 84,18,available,2023-01-21,"Author 1,Author 4",Publisher 1,2022-01-25 17:05:08
+B85,Book 85,12,available,2022-01-21,"Author 1,Author 4",Publisher 1,2022-01-25 17:05:08
+B86,Book 86,90,coming_soon,2022-01-21,"Author 1,Author 4,Author 3",Publisher 1,2022-01-25 17:05:08
+B87,Book 87,101,available,2022-01-26,"Author 4,Author 3",Publisher 1,2022-01-25 17:05:08

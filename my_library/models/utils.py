@@ -2,7 +2,7 @@ from odoo import fields, _
 
 import csv
 
-DATA_PATH = '/home/laith/odoo-dev/csv-files/library.book.csv'
+DATA_PATH = '../csv-files/library.book.csv'
 
 
 # TODO: before inserting, pay attention to 1) existence of required fields, 2) their values & constraints.
