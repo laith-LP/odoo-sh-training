@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-
     <record id='library_book_action' model='ir.actions.act_window'>
         <field name="name">Library Books</field>
         <field name="res_model">library.book</field>
@@ -8,7 +7,8 @@
     </record>
 
     <menuitem name="My Library" id="library_base_menu" web_icon="my_library,static/description/icon.png"/>
-    <menuitem name="Books" id="library_book_menu" parent="library_base_menu" action="library_book_action"/>
+    <menuitem name="Books" id="library_book_menu" parent="library_base_menu"
+              action="library_book_action" sequence="15"/>
 
     <!-- Form View -->
     <record id="library_book_view_form" model="ir.ui.view">
@@ -17,6 +17,7 @@
         <field name="arch" type="xml">
             <form>
                 <header>
+                    <button name="book_coming_soon" string="Coming Soon" type="object"/>
                     <button name="make_available" string="Make Available" type="object"/>
                     <button name="make_lost" string="Make Lost" type="object"/>
                     <field name="state" widget="statusbar"/>
@@ -25,13 +26,16 @@
                     <group>
                         <group>
                             <field name="name"/>
+                            <field name="ref_id"/>
                             <field name="author_ids" widget="many2many_tags"/>
+                            <field name="publisher_id"/>
                         </group>
                         <group>
                             <field name="date_release"/>
-                            <field name="color" widget="int_color"/>
+                            <field name="price"/>
                         </group>
                     </group>
+                    <field name="description"/>
                 </sheet>
             </form>
         </field>
@@ -39,12 +43,16 @@
 
     <!-- Tree(list) View -->
     <record id="library_book_view_tree" model="ir.ui.view">
-        <field name="name">Library Book List</field>
+        <field name="name">Library Book List View</field>
         <field name="model">library.book</field>
         <field name="arch" type="xml">
             <tree>
                 <field name="name"/>
+                <field name="price"/>
+                <field name="state"/>
                 <field name="date_release"/>
+                <field name="author_ids" widget="many2many_tags"/>
+                <field name="publisher_id"/>
             </tree>
         </field>
     </record>
@@ -56,10 +64,24 @@
         <field name="arch" type="xml">
             <search>
                 <field name="name"/>
+                <field name="publisher_id"/>
                 <field name="author_ids"/>
-                <filter string="Without Authors" name="without_author" domain="[('author_ids','=',False)]"/>
+                <filter string="Available" name="filter_available_books" domain="[('state','=','available')]"/>
+                <filter string="Lost" name="filter_lost_books" domain="[('state','=','lost')]"/>
+                <filter string="Coming Soon" name="filter_coming_soon_books" domain="[('state','=','coming_soon')]"/>
+                <filter string="Unknown Publisher" name="filter_unknown_publisher"
+                        domain="[('publisher_id.name','=','Unknown Publisher')]"/>
+                <filter string="Unknown Authors" name="filter_unknown_author" domain="[('author_ids','=',False)]"/>
+                <group expand="0" string="Group By">
+                    <filter string="Release Date" name="group_by_date"
+                            domain="[]" context="{'group_by':'date_release'}"/>
+                    <filter string="State" name="group_by_state"
+                            domain="[]" context="{'group_by':'state'}"/>
+                    <separator/>
+                    <filter string="Publisher" name="group_by_publisher"
+                            domain="[]" context="{'group_by':'publisher_id'}"/>
+                </group>
             </search>
         </field>
     </record>
-
 </odoo>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="action_books_report" model="ir.actions.act_window">
+        <field name="name">Reporting</field>
+        <field name="res_model">library.book</field>
+        <field name="view_mode">graph,pivot</field>
+    </record>
+
+    <menuitem name="Dashboard" id="library_book_dashboard" parent="library_base_menu"
+              action="board.open_board_my_dash_action" sequence="10"/>
+    <menuitem id="library_report_main_menu" name="Reporting"
+              parent="library_base_menu" sequence="20"/>
+    <menuitem id="books_report_main_menu" name="Books Analysis"
+              parent="library_report_main_menu" action="action_books_report"
+              sequence="10"/>
+
+    <record id="library_book_view_graph" model="ir.ui.view">
+        <field name="name">Library Book Graph View</field>
+        <field name="model">library.book</field>
+        <field name="arch" type="xml">
+            <graph type="bar" stacked="False">
+                <field name="publisher_id" type="row"/>
+                <field name="state" type="row"/>
+            </graph>
+        </field>
+    </record>
+
+    <record id="library_book_view_pivot" model="ir.ui.view">
+        <field name="name">Library Book Pivot View</field>
+        <field name="model">library.book</field>
+        <field name="arch" type="xml">
+            <pivot display_quantity="False">
+                <field name="publisher_id" type="row"/>
+                <field name="price" string="Total Price" type="measure"/>
+                <field name="ref_id" invisible="1"/>
+                <field name="name" invisible="1"/>
+            </pivot>
+        </field>
+    </record>
+</odoo>

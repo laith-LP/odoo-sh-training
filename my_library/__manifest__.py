@@ -7,20 +7,27 @@ Manage Library
 ==============
 Description related to library.
     """,  # Supports reStructuredText(RST) format
-    'author': "Parth Gajjar",
-    'website': "http://www.example.com",
-    'category': 'Tools',
+    'author': "Laith Al-Zoubi",
+    'category': 'Demo',
     'version': '14.0.1',
-    'depends': ['base', 'web', 'web_tour'],
 
+    # Odoo modules which must be loaded before this one
+    'depends': [
+        'base',
+        'web',
+        'web_tour',
+        'board',
+    ],
+
+    # List of data files which must always be installed or updated with the module
     'data': [
         'security/groups.xml',
         'security/ir.model.access.csv',
-        'views/library_book.xml',
-        'views/templates.xml'
+        'views/library_book_views.xml',
+        'data/books_scheduled_actions.xml',
+        'report/books_report.xml',
     ],
-    # This demo data files will be loaded if db initialize with demo data (commented becaues file is not added in this example)
     # 'demo': [
-    #     'demo.xml'
+    #     'demo/demo.xml'
     # ],
 }
